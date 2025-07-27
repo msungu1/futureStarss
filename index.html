@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>Future Hotel</title>
+</head>
+<body>
+
+  <!-- ==================================HEADER================================================= -->
+  <header class="header">
+    <div class="logo">Future<i class="fas fa-star" aria-hidden="true"></i>
+        Hotel</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Accommodation</a>
+      <a href="#">Bar</a>
+      <a href="#">Restaurant</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- =======================================MAIN=============================================== -->
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Future<i class="fas fa-star" aria-hidden="true"></i>
+        Hotel</h1>
+      <p>Your perfect getaway destination</p>
+      <button>Book Now</button>
+    </section>
+
+    <section class="booking-form">
+      <form id="booking-form">
+        <label for="check-in">Check-in Date:</label>
+        <input type="date" id="check-in" name="checkIn" required>
+
+        <label for="check-out">Check-out Date:</label>
+        <input type="date" id="check-out" name="checkOut" required>
+
+        <label for="room-type">Room Type:</label>
+        <select id="room-type" name="roomType" required>
+          <option value="">Select Room Type</option>
+          <option value="Single">Single</option>
+          <option value="Double">Double</option>
+          <option value="Suite">Suite</option>
+        </select>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+
+    <section class="room-listing">
+      <div class="room-card">
+        <img src="/images/bed11.jpg" alt="Single Room">
+        <h3>Single Room</h3>
+        <p>$50 per night</p>
+        <button>Book Now</button>
+      </div>
+
+      <div class="room-card">
+        <img src="/images/double bed.jpg" alt="Double Room">
+        <h3>Double Room</h3>
+        <p>$80 per night</p>
+        <button>Book Now</button>
+      </div>
+      <div class="room-card">
+        <img src="/images/suite.jpg" alt="Suite">
+        <h3>Suite</h3>
+        <p>$150 per night</p>
+        <button>Book Now</button>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- =================================================FOODMENUE====================================== -->
+  <section class="food-menu">
+    <h2>Our Delicious Food</h2>
+    <p>Explore our wide variety of delicious dishes, served fresh and hot just for you.</p>
+    
+    <div class="food-item">
+      <img src="/images/italian pasta.jpg" alt="Pasta">
+      <div class="food-info">
+        <h3>Italian Pasta</h3>
+        <p>A delightful pasta dish with rich tomato sauce, herbs, and a side of garlic bread.</p>
+        <p class="price">$15.00</p>
+      </div>
+    </div>
+  
+    <div class="food-item">
+      <img src="/images/Margherita Pizza.jpg" alt="Pizza">
+      <div class="food-info">
+        <h3>Margherita Pizza</h3>
+        <p>Classic pizza with fresh mozzarella, tomatoes, and basil, cooked to perfection.</p>
+        <p class="price">$12.00</p>
+      </div>
+    </div>
+  
+    <div class="food-item">
+      <img src="/images/Cheeseburger.jpg" alt="Burger">
+      <div class="food-info">
+        <h3>Cheeseburger</h3>
+        <p>Juicy beef patty with melted cheese, lettuce, tomato, and our special sauce.</p>
+        <p class="price">$10.00</p>
+      </div>
+    </div>
+  
+    <div class="food-item">
+      <img src="/images/Fresh Salad.jpg" alt="Salad">
+      <div class="food-info">
+        <h3>Fresh Salad</h3>
+        <p>A mix of seasonal greens with a light vinaigrette dressing, perfect for a healthy meal.</p>
+        <p class="price">$8.00</p>
+      </div>
+    </div>
+  
+  </section>
+
+
+  <!-- ==========================================TESTIMONIALS========================================== -->
+  <section class="testimonials">
+    <h2>What Our Guests Say</h2>
+    <div class="testimonial">
+      <p>"The best experience I've ever had! The staff were friendly, and the rooms were spotless. Will definitely be back!"</p>
+      <span>- Jane Doe</span>
+    </div>
+    <div class="testimonial">
+      <p>"Amazing food, great ambiance, and fantastic service. A perfect getaway destination!"</p>
+      <span>- John Smith</span>
+    </div>
+  </section>
+
+
+
+  <!-- ==============================================MADAL========================================== -->
+  <div class="modal" id="booking-modal">
+    <div class="modal-content">
+      <span class="close" id="close-modal">&times;</span>
+      <h2>Booking Form</h2>
+      <form id="modal-booking-form">
+        <label for="check-in-modal">Check-in Date:</label>
+        <input type="date" id="check-in-modal" name="checkIn" required>
+  
+        <label for="check-out-modal">Check-out Date:</label>
+        <input type="date" id="check-out-modal" name="checkOut" required>
+  
+        <label for="room-type-modal">Room Type:</label>
+        <select id="room-type-modal" name="roomType" required>
+          <option value="">Select Room Type</option>
+          <option value="Single">Single</option>
+          <option value="Double">Double</option>
+          <option value="Suite">Suite</option>
+        </select>
+  
+        <label for="guests-modal">Number of Guests:</label>
+        <input type="number" id="guests-modal" name="guests" min="1" max="10" required>
+  
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+  </div>
+  
+
+  <!-- ======================================FOOTER==================================================== -->
+
+  <footer class="footer">
+    <p>&copy; 2024 Future Hotel. All rights reserved.</p>
+    <p>Contact us: info@futurehotel.com</p>
+    <p>create by Robert</p>
+  </footer>
+
+
+  <!-- ====================================SCRIPT======================================================== -->
+
+  <script src="scripts.js">
+
+    // Select all the "Book Now" buttons
+const bookNowButtons = document.querySelectorAll('button');
+
+// Add event listener to each button
+bookNowButtons.forEach(button => {
+  button.addEventListener('click', function(event) {
+    // You can handle different button clicks here
+    if (event.target.textContent === 'Book Now') {
+      alert('You clicked on Book Now!');
+      // Example: You could open a modal, submit a form, or perform other actions
+    }
+  });
+});
+
+
+// Select all the navigation links
+const navLinks = document.querySelectorAll('.nav a');
+
+// Add event listener to each link
+navLinks.forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+
+    const linkText = event.target.textContent;
+    
+    if (linkText === 'Home') {
+      window.location.href = 'index.html'; // Navigate to the home page
+    } else if (linkText === 'About Us') {
+      window.location.href = 'about.html'; // Navigate to About Us page
+    }
+    // You can add more conditions for other links
+  });
+});
+
+
+// Select the booking form
+const bookingForm = document.getElementById('booking-form');
+
+// Add submit event listener
+bookingForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  // You can validate or process form data here
+  const checkIn = document.getElementById('check-in').value;
+  const checkOut = document.getElementById('check-out').value;
+  const roomType = document.getElementById('room-type').value;
+  const guests = document.getElementById('guests').value;
+
+  alert(`Booking Details:\nCheck-in: ${checkIn}\nCheck-out: ${checkOut}\nRoom Type: ${roomType}\nGuests: ${guests}`);
+
+  // You could also send the form data to a server here (e.g., using AJAX)
+});
+
+
+// Get the modal
+const modal = document.getElementById('booking-modal');
+
+// Get the button that opens the modal
+const bookNowButton = document.querySelector('button'); // Assuming you have a button in the main page
+
+// Get the <span> element that closes the modal
+const closeModal = document.getElementById('close-modal');
+
+// When the user clicks the "Book Now" button, open the modal
+bookNowButton.addEventListener('click', function() {
+  modal.style.display = 'block'; // Show the modal
+});
+
+// When the user clicks on <span> (x), close the modal
+closeModal.addEventListener('click', function() {
+  modal.style.display = 'none'; // Hide the modal
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.addEventListener('click', function(event) {
+  if (event.target === modal) {
+    modal.style.display = 'none'; // Hide the modal if clicked outside
+  }
+});
+  </script>
+</body>
+</html>

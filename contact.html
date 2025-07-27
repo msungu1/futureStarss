@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Future Hotel</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Future Hotel</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="accommodation.html">Accommodation</a>
+      <a href="bar.html">Bar</a>
+      <a href="restaurant.html">Restaurant</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+
+
+  <section class="newsletter">
+    <h2>Stay Updated with Our Newsletter</h2>
+    <p>Subscribe to receive special offers and updates about Future Hotel.</p>
+    <form action="subscribe.php" method="POST">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+  
+
+  <section class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="submit_form.php" method="POST">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+
+  <footer class="footer">
+    <p>&copy; 2024 Future Hotel. All rights reserved.</p>
+    <p>Contact us: info@futurehotel.com</p>
+    <p>create by Robert</p>
+
+  </footer>
+</body>
+</html>
